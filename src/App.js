@@ -1,9 +1,9 @@
-import SJHPortfolio from './components/SJHPortfolio';
+import Project from './components/Project';
 
 function App() {
   return (
     <div className="bg-background">
-      <SJHPortfolio />
+      <Project />
     </div>
   );
 }
