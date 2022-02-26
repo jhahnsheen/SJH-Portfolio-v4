@@ -13,6 +13,10 @@ module.exports = {
         'red': '#D90000',
       },
     },
+    fontFamily: {
+      sans: ['DM Sans', 'sans-serif'],
+      heading: ['DM Sans', 'sans-serif']
+    },
   },
   plugins: [],
 }

@@ -13,7 +13,7 @@ const Portfolio = () => {
     if (currentPage === 'AboutMe') {
       return <AboutMe />;
     }
-    if (currentPage === 'Portfolio') {
+    if (currentPage === 'ProjectContainer') {
       return <ProjectContainer />;
     }
     if (currentPage === 'Contact') {
