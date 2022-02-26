@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='flex justify-between pl-40 pr-36 py-16 text-xl font-[500]'>
+    <div className='flex justify-between pl-40 pr-36 py-16 text-xl font-[500] text-mainBlack'>
       <div>
         <h3>Sheen J Hahn ⏤ 2022</h3>
       </div>
