@@ -9,17 +9,17 @@ const Navigation = ({ currentPage, pageChange }) => {
         </a>
       </div>
       <div className='mx-4 link-underline link-underline-black'>
-        <a href='#ProjectContainer' onClick={() => pageChange('ProjectContainer')} className={currentPage === 'ProjectContainer' ? 'text-black' : 'text-grey'}>
+        <a href='#ProjectContainer' onClick={() => pageChange('ProjectContainer')} className={currentPage === 'ProjectContainer' ? 'text-black active' : 'text-grey'}>
           Portfolio
         </a>
       </div>
       <div className='mx-4 link-underline link-underline-black'>
-        <a href='#Contact' onClick={() => pageChange('Contact')} className={currentPage === 'Contact' ? 'text-black' : 'text-grey'}>
+        <a href='#Contact' onClick={() => pageChange('Contact')} className={currentPage === 'Contact' ? 'text-black active' : 'text-grey'}>
           Contact
         </a>
       </div>
       <div className='mx-4 link-underline link-underline-black'>
-        <a href='#Resume' onClick={() => pageChange('Resume')} className={currentPage === 'Resume' ? 'text-black' : 'text-grey'}>
+        <a href='#Resume' onClick={() => pageChange('Resume')} className={currentPage === 'Resume' ? 'text-black active' : 'text-grey'}>
           Resume
         </a>
       </div>
