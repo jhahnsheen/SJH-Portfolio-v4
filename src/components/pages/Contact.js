@@ -51,7 +51,7 @@ const Contact = () => {
               value={inputName}
               name='name'
               type='text'
-              className={blurredName === true && inputName === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainGrey relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
+              className={blurredName === true && inputName === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainBlack relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
               placeholder='Name'
               id='name'
               required
@@ -72,7 +72,7 @@ const Contact = () => {
               value={inputEmail}
               name='name'
               type='text'
-              className={blurredEmail === true && inputEmail === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainGrey relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
+              className={blurredEmail === true && inputEmail === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainBlack relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
               placeholder='Email address'
               id='name'
               required
@@ -93,7 +93,7 @@ const Contact = () => {
               value={inputMessage}
               name='name'
               type='text'
-              className={blurredMessage === true && inputMessage === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainGrey relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
+              className={blurredMessage === true && inputMessage === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainBlack relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
               placeholder='Your message here'
               id='name'
               required

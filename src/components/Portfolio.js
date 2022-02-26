@@ -6,6 +6,8 @@ import Contact from './pages/Contact';
 import ProjectContainer from './pages/ProjectContainer';
 import Resume from './pages/Resume';
 
+import projects from './projectList';
+
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState('AboutMe');
   
@@ -16,7 +18,7 @@ const Portfolio = () => {
       return <AboutMe pageChange={pageChange} />;
     }
     if (currentPage === 'ProjectContainer') {
-      return <ProjectContainer />;
+      return <ProjectContainer projects={projects} />;
     }
     if (currentPage === 'Contact') {
       return <Contact />;

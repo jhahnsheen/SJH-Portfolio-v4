@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Project = ({project}) => {
+const Project1 = ({project}) => {
   return (
-    <div className='flex justify-between divided my-10 font-arrow'>
+    <div className='flex justify-between my-10 font-arrow'>
       <div className='flex flex-col basis-1/3 mt-24'>
         <h3 className='font-[500] text-lg text-mainBlack'>{`0${project.id} / ${project.name}`}</h3>
         <p className='font-[400] text-lg text-mainBlack mt-5'>{`${project.description}`}</p>
@@ -19,4 +19,4 @@ const Project = ({project}) => {
   );
 }
 
-export default Project;
+export default Project1;

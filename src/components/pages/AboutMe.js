@@ -13,7 +13,7 @@ const AboutMe = ({ pageChange }) => {
             </p>
           </div>
           <div className='py-8 pr-36'>
-            <img src={process.env.PUBLIC_URL + '/portrait.jpeg'} alt='filler pic' width='420' />
+            <img src={process.env.PUBLIC_URL + '/images/portrait.jpeg'} alt='filler pic' width='420' />
           </div>
       </div>
       <div className='flex justify-start ml-40 mr-36 my-24 divided'>

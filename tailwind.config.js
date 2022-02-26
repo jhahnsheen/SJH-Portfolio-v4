@@ -14,8 +14,9 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['DM Sans', 'sans-serif'],
-      heading: ['DM Sans', 'sans-serif']
+      sans: ['"DM Sans"', 'sans-serif'],
+      heading: ['"DM Sans"', 'sans-serif'],
+      arrow: ['Inter', 'sans-serif']
     },
   },
   plugins: [],
