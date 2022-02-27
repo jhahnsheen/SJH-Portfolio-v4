@@ -28,6 +28,15 @@ const projects = [
   },
   {
     id: 4,
+    name: 'Team Profile Generator',
+    description: "The Team Profile Generator (TPG) is an application that is designed for project managers who want to have a resource to find all of their team members' contact links in one spot. The TPG allows the user to categorize each employee by their job title and to store different fields for each team member based on their position. Once all of the fields are filled out, the application will then generate an HTML page that contains all of the information that the user inputs.",
+    caption: 'Made with CSS, HTML, and JavaScript',
+    deployment: 'https://drive.google.com/drive/folders/1B6p8Sx0bYxyalqSKfYltxMotXecdCBTY?usp=sharing',
+    repository: 'https://github.com/jhahnsheen/Team-Profile-Generator-v1',
+    image: '/images/team_profile.png'
+  },
+  {
+    id: 5,
     name: 'Day Planner',
     description: 'This Day Planner application was designed to be a day planner for the busy working professional with a full schedule to plan for in their workday. This application will update the date automatically and the time blocks will change color according to the time of day and, by extension, whether the appointment has passed or not.',
     caption: 'Made with Moment, CSS, HTML, and JavaScript',
@@ -36,7 +45,7 @@ const projects = [
     image: '/images/day_planner.png'
   },
   {
-    id: 5,
+    id: 6,
     name: 'JavaScript Quiz',
     description: 'This application is designed to quiz the user, a beginner Javascript user, on various basic Javascript topics. The score of the user will be calculated based on remaining time and recorded. The user can then save their score with their initials so that their scores can be compared with those of others.',
     caption: 'Made with TailwindCSS, JavaScript, and HTML',
@@ -45,7 +54,7 @@ const projects = [
     image: '/images/js_quiz.png'
   },
   {
-    id: 6,
+    id: 7,
     name: 'Password Generator',
     description: 'This application has a single function: create a randomized password based on prompts from the user. This randomized password can contain uppercase characters, lowercase characters, numeric characters, and special characters, based on prompts made by the user.',
     caption: 'Made with CSS, HTML, and JavaScript',
