@@ -30,7 +30,7 @@ const projects = [
     id: 4,
     name: 'Team Profile Generator',
     description: "The Team Profile Generator (TPG) is an application that is designed for project managers who want to have a resource to find all of their team members' contact links in one spot. The TPG allows the user to categorize each employee by their job title and to store different fields for each team member based on their position. Once all of the fields are filled out, the application will then generate an HTML page that contains all of the information that the user inputs.",
-    caption: 'Made with CSS, HTML, and JavaScript',
+    caption: 'Made with TailwindCSS, NodeJS, and JavaScript; uses Jest and Inquirer',
     deployment: 'https://drive.google.com/drive/folders/1B6p8Sx0bYxyalqSKfYltxMotXecdCBTY?usp=sharing',
     repository: 'https://github.com/jhahnsheen/Team-Profile-Generator-v1',
     image: '/images/team_profile.png'
