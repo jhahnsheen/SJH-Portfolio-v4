@@ -30,7 +30,7 @@ const projects = [
     id: 4,
     name: 'Note Taker',
     description: 'The Note Taker application is designed for the busy business owner who needs a simple and easy-to-use virtual memo pad. Organize your thoughts and keep track of the tasks you need to complete on an easily accessible application.',
-    caption: 'Made with NodeJS, ExpressJS, Webpack, Babel, IndexedDB, and Workbox',
+    caption: 'Made with NodeJS, ExpressJS, and deployed on Heroku',
     deployment: 'https://bksb-note-taker.herokuapp.com/',
     repository: 'https://github.com/jhahnsheen/Note-Taker-v1',
     image: '/images/note_taker.png'
