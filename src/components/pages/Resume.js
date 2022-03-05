@@ -6,7 +6,7 @@ const Resume = () => {
       <div>
         <h1 className='text-6xl font-[500] pt-4'>Resume</h1>
         <div className='text-3xl font-[400] mt-24'>
-          <h2 className='text-mainGrey'><span className='text-mainGrey font-[500]'><a href={process.env.PUBLIC_URL + '/resume.md'} download='SJH_resume.md'>Click here</a></span> to download my resume</h2>
+          <h2 className='text-mainGrey'><span className='text-mainGrey font-[500]'><a href={process.env.PUBLIC_URL + '/sjh_resume02_2022.pdf'} download='sjh_resume2022.pdf'>Click here</a></span> to download my resume</h2>
         </div>
       </div>
       <div className='mt-28'>
