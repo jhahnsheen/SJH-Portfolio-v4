@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
+import { send } from 'emailjs-com';
 
 const Contact = () => {
-  const [inputName, setInputName] = useState('');
-  const [inputEmail, setInputEmail] = useState('');
-  const [inputMessage, setInputMessage] = useState('');
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    to_name: 'Sheen',
+    message: '',
+    reply_to: '',
+  });
   const [submitted, setSubmitted] = useState(false);
   const [blurredName, setBlurredName] = useState(false);
   const [blurredEmail, setBlurredEmail] = useState(false);
   const [blurredMessage, setBlurredMessage] = useState(false);
 
-  const handleInputChangeName = (e) => setInputName(e.target.value);
-  const handleInputChangeEmail = (e) => setInputEmail(e.target.value);
-  const handleInputChangeMessage = (e) => setInputMessage(e.target.value);
+  const handleInputChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
 
   const onBlurName = () => {
     setBlurredName(true);
@@ -25,15 +29,19 @@ const Contact = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    const messageObject = {
-      name: inputName,
-      email: inputEmail,
-      message: inputMessage,
-    };
-
-    setSubmitted(true);
-    localStorage.setItem(messageObject)
+    send(
+      'service_z1dqiwi',
+      'template_2k7s2y4',
+      toSend,
+      'WnSR-97ANWtVA-K6u'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setSubmitted(true);
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
   };
 
   return (
@@ -46,18 +54,18 @@ const Contact = () => {
           </div>
           <div className='my-4'>
             <input 
-              onChange={handleInputChangeName}
+              onChange={handleInputChange}
               onBlur={onBlurName}
-              value={inputName}
-              name='name'
+              value={toSend.from_name}
+              name='from_name'
               type='text'
-              className={blurredName === true && inputName === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainBlack relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
+              className={blurredName === true && toSend.from_name === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainBlack relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
               placeholder='Name'
               id='name'
               required
             />
           </div>
-          <div className={blurredName === true && inputName === '' ? 'text-red' : 'text-background'}>
+          <div className={blurredName === true && toSend.from_name === '' ? 'text-red' : 'text-background'}>
             <h3>Your name is a required field</h3>
           </div>
         </div>
@@ -67,18 +75,18 @@ const Contact = () => {
           </div>
           <div className='my-4'>
             <input 
-              onChange={handleInputChangeEmail}
+              onChange={handleInputChange}
               onBlur={onBlurEmail}
-              value={inputEmail}
-              name='name'
+              value={toSend.reply_to}
+              name='reply_to'
               type='text'
-              className={blurredEmail === true && inputEmail === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainBlack relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
+              className={blurredEmail === true && toSend.reply_to === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainBlack relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
               placeholder='Email address'
               id='name'
               required
             />
           </div>
-          <div className={blurredEmail === true && inputEmail === '' ? 'text-red' : 'text-background'}>
+          <div className={blurredEmail === true && toSend.reply_to === '' ? 'text-red' : 'text-background'}>
             <h3>Your email is a required field</h3>
           </div>
         </div>
@@ -88,18 +96,18 @@ const Contact = () => {
           </div>
           <div className='my-4'>
             <input 
-              onChange={handleInputChangeMessage}
+              onChange={handleInputChange}
               onBlur={onBlurMessage}
-              value={inputMessage}
-              name='name'
+              value={toSend.message}
+              name='message'
               type='text'
-              className={blurredMessage === true && inputMessage === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainBlack relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
+              className={blurredMessage === true && toSend.message === '' ? 'pr-3 py-3 placeholder-red placeholder-opacity-50 text-red relative bg-background rounded text-lg border-b-red border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-red' : 'pr-3 py-3 placeholder-gray-400 text-mainBlack relative bg-background rounded text-lg border-b-[#c3c3c3] border-2 shadow:none focus:outline-0 w-3/5 focus:border-b-mainBlack ease-linear transition-all duration-300'}
               placeholder='Your message here'
               id='name'
               required
             />
           </div>
-          <div className={blurredMessage === true && inputMessage === '' ? 'text-red' : 'text-background'}>
+          <div className={blurredMessage === true && toSend.message === '' ? 'text-red' : 'text-background'}>
             <h3>Your message is a required field</h3>
           </div>
         </div>
