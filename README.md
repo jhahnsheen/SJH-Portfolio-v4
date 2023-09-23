@@ -9,4 +9,4 @@ Hopefully the portfolio speaks for itself and the content highlights my strength
 My goal was to create an easy-to-read and intuitive layout with a mild yet stylish modern concept that represents a clean canvas. 
 ## Deployment
 
-Currently, the portfolio is deployed at [GitHub Pages](https://jhahnsheen.github.io/SJH-Portfolio-v4) and the repo can be found on [GitHub](https://github.com/jhahnsheen/SJH-Portfolio-v4) as well. However, after the portfolio is finalized, you can expect the portfolio to be deployed to a unique domain. Hope to connect with you!
+Currently, the portfolio is deployed at [on my website](jhahnsheen.com) and the repo can be found on [GitHub](https://github.com/jhahnsheen/SJH-Portfolio-v4) as well. However, after the portfolio is finalized, you can expect the portfolio to be deployed to a unique domain. Hope to connect with you!
